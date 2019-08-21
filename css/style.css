@@ -201,6 +201,10 @@ input::-webkit-input-placeholder {
 	padding-left:0px;
 }
 
+.one ul li {
+	margin-left:5px;
+}
+
 .icons a i {
 	font-size:22px;
 	color:#1a2947;
@@ -212,14 +216,14 @@ input::-webkit-input-placeholder {
 
 
 .two {
-	width:79%;
+	width:78%;
 	height:100%;
 	float:right;
 }
 
 .two > ul {
-	margin-top:9px;
-	margin-left:0px;
+	margin-top:11px;
+	margin-left:2px;
 	padding-left:12px;
 }
 
@@ -500,6 +504,8 @@ margin-right:5px;
     width: 407px;
 }
 
+/* MESSENGER DROPDOWN !!! */
+
 .dropdown-content-messenger {
 	display:none;
 	background: #fff;
@@ -695,6 +701,8 @@ margin-right:5px;
 	text-decoration:underline;
 }
 
+/* DROPDOWN NOTIFICATIONS !!! */
+
 .dropdown-content-notifications {
 	display:none;
 	background: #fff;
@@ -704,7 +712,7 @@ margin-right:5px;
 	color: #1d2129;
 	position: absolute;
 	top:46px;
-	left:480px;
+	left:932px;
 	width:432px;
 	height:456px;
 	z-index: -1;
@@ -885,13 +893,12 @@ margin-right:5px;
 	margin-top:-15px; /* DO NOT FORGET !!! */
 } 
 
-/* LOOK RIGHT !!!*/ .dropdown-down li a i {margin-left:-230px;} /* LOOK LEFT !!!*/ /*DO NOT FORGET !!!*/
+/* LOOK RIGHT !!!*/ .dropdown-down a i {margin-left:-239px;} /* LOOK LEFT !!!*/ /*DO NOT FORGET !!!*/
 
 /* HELP DROPDOWN !!! */
 
-.dropdown-content-help
-{
-	/*display:none;*/
+.dropdown-content-help {
+	display:none;
 	background: #fff;
 	border: 1px solid rgba(100, 100, 100, .4);
 	border-radius: 0 0 2px 2px;
@@ -899,10 +906,11 @@ margin-right:5px;
 	color: #1d2129;
 	position: absolute;
 	top:46px;
-	left:804px;
+	left:999px;
 	width:260px;
-	height:471px;
+	height:445px;
 	/*434*/
+	/*471*/
 	z-index: -1;
 	padding:8px;
 	/*overflow:auto;*/
@@ -913,7 +921,7 @@ margin-right:5px;
 .dropdown-help {
 	width: 260px;
 	height: 22px;
-	margin:0px !important;
+	/*margin:0px !important;*/
 }
 
 .h-left {
@@ -952,7 +960,7 @@ margin-right:5px;
 }
 
 .h-search input::placeholder {
-	color:silver;
+	color:#9a9ea5;
 }
 
 
@@ -1012,7 +1020,11 @@ margin-right:5px;
     border-bottom: 1px solid #dddfe2;
     border-top: 1px solid #dddfe2;
     height: 6px;
-    margin-top: 12px;
+    margin-top:-3px; /* DO NOT FORGET !!! */
+}
+
+.h-tools {
+	margin-top: 10px;
 }
 
 .h-tools a {
@@ -1056,12 +1068,179 @@ margin-right:5px;
 	color: #1d2129;
 	position: absolute;
 	top:46px;
-	left:1055px;
-	width:260px;
-	height:434px;
+	left:1019px;
+	width:200px;
+	height:180px;
 	z-index: -1;
-	padding:6px;
-	overflow:auto;
+	/*padding-left: 4px;
+	padding-right:4px;*/
+	padding-bottom: 5px;
+	padding-top:5px;
+	/*overflow:auto;*/
+}
+
+.dropdown-down:hover .dropdown-content-down {display: block;}
+
+.d-link1, .d-link2 {
+	border-bottom: 1px solid #e9ebee;
+}
+
+.d-link1 a, .d-link2 a {
+	color: #1d2129;
+
+}
+
+.d-link1 , .d-link2 {
+	/*margin-top: 6px;*/
+}
+
+.d-link1 a {
+	line-height:25px;
+}
+
+.d-link2 a {
+	line-height: 24px;
+}
+
+.dropdown-content-down ul li {
+	margin-left: 0px;
+	display: block;
+	text-align:left;
+	width: 200px;
+	height: 24px;
+	margin-top:6px;
+}
+
+.dropdown-content-down ul {
+	/*margin-top:5px;*/
+}
+
+.d-link3 a ,.d-link4 a ,.d-link5 a ,.d-link6 a {
+	line-height: 24px;
+}
+
+
+.dropdown-content-down ul li a {
+	padding-left:22px;
+	font-size:12px;
+}
+
+.dropdown-content-down ul li:hover, .dropdown-content-down ul li a:hover {
+	background-color:#4267b2;
+	cursor: pointer;
+	color: #fff;
+}
+
+/* ACCOUNT DROPDOWN !!! */
+
+.dropdown-content-account {
+	display:none;
+	background: #fff;
+	border: 1px solid rgba(100, 100, 100, .4);
+	border-radius: 0 0 2px 2px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	color: #1d2129;
+	position: absolute;
+	top:46px;
+	left:964px;
+	width:330px;
+	height:195px;
+	z-index: -1;
+	padding:12px;
+	/*overflow:auto;*/
+}
+
+.dropdown-account:hover .dropdown-content-account {display: block;}
+
+.a-left {
+	float: left;
+}
+
+.a-left span {
+	font-weight:bold;
+	font-size: 12px;
+	float: left;
+}
+
+.a-right {
+	float: right;
+}
+
+.a-right i {
+	float: right;
+	color: #90949c;
+}
+
+.a-right i:hover {
+	cursor: pointer;
+}
+
+.a-down {
+	display: block;
+	float: left;
+}
+
+.a-down span {
+	float: left;
+	font-size:11px;
+	margin-top:9px;
+	color: #8d949e;
+}
+
+.accounts {
+	margin-top: 13px;
+}
+
+.account-name {
+	text-align: center;
+	color: #1c1e21;
+    font-size: 12px;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 0 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #dddfe2;
+    margin-top:-3px;
+}
+
+.account-name span {
+	text-align: center;
+}
+
+.accounts li {
+	margin-left:6px !important;
+}
+
+.accounts li:hover {
+	cursor: pointer;
+}
+
+.account1, .account2, .account3 {
+	width: 100px;
+	height:135px;
+} 
+
+.account3 {
+	/*background-color: #dddfe2;*/
+}
+
+/*.account3 img {
+	margin-bottom: 40px;
+	margin-left: 40px;
+}*/
+
+.account1 img, .account2 img, .account3 img {
+	border-radius: 4%;
+}
+
+.account1 div, .account2 div, .account3 div {
+	border-radius: 4%;
+}
+
+.account3 img {
+	width: 100px;
+	height:100px;
 }
 
 /*.f-p {
