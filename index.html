@@ -39,6 +39,7 @@
 								<a href="#" class="friends-icon">
 									<i class="fas fa-user-friends"></i>
 								</a>
+								<div class="dropdown-arrow"></div>
 								<div class="dropdown-content-friends">
 									<div class="friends-dropdown">
 										<div class="f-left">
@@ -46,9 +47,9 @@
 										</div>
 										<div class="f-right">
 											<ul>
-												<li><a href="#">Settings</a></li>
-												<span>.</span>
 												<li><a href="#">Find Friends</a></li>
+												<span>.</span>
+												<li><a href="#">Settings</a></li>
 											</ul>
 										</div>
 									</div>
@@ -60,7 +61,7 @@
 
 									<div class="friends-list">
 										<div class="my-friends">
-											<ul>
+											<ul class="requests-list">
 												<li class="friends">
 
 													<div class="f-user"> <!-- FRIEND !!!-->
@@ -348,6 +349,7 @@
 								<a href="#" class="messenger">
 									<i class="fab fa-facebook-messenger"></i>
 								</a>
+								<div class="dropdown-arrow"></div>
 								<div class="dropdown-content-messenger">
 									<div class="messenger-dropdown">
 										<div class="m-left">
@@ -366,7 +368,7 @@
 									</div>
 									<div class="messenger-list">
 										<div class="my-messages">
-											<ul>
+											<ul class="my-messenger">
 												<li class="messages">
 													<div class="m-user">
 
@@ -676,6 +678,7 @@
 								<a href="#" class="bell">
 									<i class="fas fa-bell"></i>
 								</a>
+								<div class="dropdown-arrow"></div>
 								<div class="dropdown-content-notifications">
 									<div class="notifications-dropdown">
 										<div class="n-left"><span>Notifications</span></div>
@@ -688,100 +691,192 @@
 										</div>
 									</div>
 									<div class="notifications-list">
-										<div class="my-notifications">
+										<ul class="my-notifications">
 											<!-- <div class="n-new"><span>NEW</span></div> -->
-											<ul>
-												<li class="notifications">
-													<div class="n-user">
-														<div class="n-user-img"><a href="#"><img src="img/friends/mostafa.jpg"></a></div>
-														<div class="n-user-info">
-															<span class="n-bold">Mostafa Mohammed AbuAyash</span>
-															<span>mentioned you in a comment in</span>
-															<span class="n-bold">Phone For You Community </span>
-														</div>
+											
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/mostafa.jpg"></a></div>
+													<div class="n-user-info">
+														<span class="n-bold">Mostafa Mohammed AbuAyash</span>
+														<span>mentioned you in a comment in</span>
+														<span class="n-bold">Phone For You Community </span>
 													</div>
-													<div class="n-status-group">
-														<i class="fas fa-users"></i>
-														<span>59m</span>
+												</div>
+												<div class="n-status-group">
+													<i class="fas fa-users"></i>
+													<span>59m</span>
+												</div>
+												<div class="notifications-right">
+													<!-- <div class="n-icons">
+														<a href="#"><i class="fas fa-ellipsis-h"></i></a>
+														<a href="#"><i class="fas fa-circle"></i></a>
+													</div> -->
+													<div class="n-img3">
+														<a href="#"><img src="img/friends/n-img3.jpg"></a>
 													</div>
-													<div class="notifications-right">
-														<div class="n-icons">
-															<a href="#"><i class="fas fa-ellipsis-h"></i></a>
-															<a href="#"><i class="fas fa-circle"></i></a>
-														</div>
-														<div class="n-img3">
-															<a href="#"><img src="img/friends/n-img3.jpg"></a>
-														</div>
-													</div>
-												</li>
-											</ul>
+												</div>
+											</li>
+											
 											<!-- <div class="n-earlier"><span>EARLIER</span></div> -->
-											<ul>
-												<li class="notifications">
-													<div class="n-user">
-														<div class="n-user-img"><a href="#"><img src="img/friends/animation.png"></a></div>
-														<div class="n-user-info">
-															<span>A Page that you like, </span>
-															<span class="n-bold">ملتقى الكرتون,</span>
-															<span>has changed its name to</span>
-															<span class="n-bold">ثانى اكسيد الكارتون</span>
-														</div>
+											
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/animation.png"></a></div>
+													<div class="n-user-info">
+														<span>A Page that you like, </span>
+														<span class="n-bold">ملتقى الكرتون,</span>
+														<span>has changed its name to</span>
+														<span class="n-bold">ثانى اكسيد الكارتون</span>
 													</div>
-													<div class="n-status-flag">
-														<i class="fas fa-flag"></i>
-														<span>3m</span>
-													</div>
-													<div class="notifications-right">
-														<div class="n-icons">
-															<a href="#"><i class="fas fa-ellipsis-h"></i></a>
-															<a href="#"><i class="fas fa-circle"></i></a>
-														</div>
-														<div class="n-img"></div>
-													</div>
-												</li>
-												<li class="notifications">
-													<div class="n-user">
-														<div class="n-user-img"><a href="#"><img src="img/friends/mybrother2.jpg"></a></div>
-														<div class="n-user-info">
-															<span class="n-bold">Ahmed Elgazar</span>
-															<span>likes a video you shared.</span>
-														</div>
-													</div>
-													<div class="n-status-like">
-														<i class="fas fa-thumbs-up"></i>
-														<span>6h</span>
-													</div>
-													<div></div>
-													<div class="n-icons">
+												</div>
+												<div class="n-status-flag">
+													<i class="fas fa-flag"></i>
+													<span>3m</span>
+												</div>
+												<div class="notifications-right">
+													<!-- <div class="n-icons">
 														<a href="#"><i class="fas fa-ellipsis-h"></i></a>
 														<a href="#"><i class="fas fa-circle"></i></a>
+													</div> -->
+													<div class="n-img"></div>
+												</div>
+											</li>
+
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/mybrother2.jpg"></a></div>
+													<div class="n-user-info">
+														<span class="n-bold">Ahmed Elgazar</span>
+														<span>likes a video you shared.</span>
 													</div>
-													<div class="n-img1">
-														<a href="#"><img src="img/friends/n-img1.jpg"></a>
+												</div>
+												<div class="n-status-like">
+													<i class="fas fa-thumbs-up"></i>
+													<span>6h</span>
+												</div>
+												<!-- <div class="n-icons">
+													<a href="#"><i class="fas fa-ellipsis-h"></i></a>
+													<a href="#"><i class="fas fa-circle"></i></a>
+												</div> -->
+												<div class="n-img1">
+													<a href="#"><img src="img/friends/n-img1.jpg"></a>
+												</div>
+											</li>
+											
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/mybrother2.jpg"></a></div>
+													<div class="n-user-info">
+														<span>Ahmed Elgazar</span>
+														<span>likes a photo you shared.</span>
 													</div>
-												</li>
-												<li class="notifications">
-													<div class="n-user">
-														<div class="n-user-img"><a href="#"><img src="img/friends/mybrother2.jpg"></a></div>
-														<div class="n-user-info">
-															<span>Ahmed Elgazar</span>
-															<span>likes a photo you shared.</span>
-														</div>
+												</div>
+												<div class="n-status-like">
+													<i class="fas fa-thumbs-up"></i>
+													<span>6h</span>
+												</div>
+												<!-- <div class="n-icons">
+													<a href="#"><i class="fas fa-ellipsis-h"></i></a>
+													<a href="#"><i class="fas fa-circle"></i></a>
+												</div> -->
+												<div class="n-img2">
+													<a href="#"><img src="img/friends/n-img2.jpg"></a>
+												</div>
+											</li>
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/mostafa.jpg"></a></div>
+													<div class="n-user-info">
+														<span class="n-bold">Mostafa Mohammed AbuAyash</span>
+														<span>mentioned you in a comment in</span>
+														<span class="n-bold">Phone For You Community </span>
 													</div>
-													<div class="n-status-like">
-														<i class="fas fa-thumbs-up"></i>
-														<span>6h</span>
-													</div>
-													<div class="n-icons">
+												</div>
+												<div class="n-status-group">
+													<i class="fas fa-users"></i>
+													<span>59m</span>
+												</div>
+												<div class="notifications-right">
+													<!-- <div class="n-icons">
 														<a href="#"><i class="fas fa-ellipsis-h"></i></a>
 														<a href="#"><i class="fas fa-circle"></i></a>
+													</div> -->
+													<div class="n-img3">
+														<a href="#"><img src="img/friends/n-img3.jpg"></a>
 													</div>
-													<div class="n-img2">
-														<a href="#"><img src="img/friends/n-img2.jpg"></a>
+												</div>
+											</li>
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/mostafa.jpg"></a></div>
+													<div class="n-user-info">
+														<span class="n-bold">Mostafa Mohammed AbuAyash</span>
+														<span>mentioned you in a comment in</span>
+														<span class="n-bold">Phone For You Community </span>
 													</div>
-												</li>
-											</ul>
-										</div>
+												</div>
+												<div class="n-status-group">
+													<i class="fas fa-users"></i>
+													<span>59m</span>
+												</div>
+												<div class="notifications-right">
+													<!-- <div class="n-icons">
+														<a href="#"><i class="fas fa-ellipsis-h"></i></a>
+														<a href="#"><i class="fas fa-circle"></i></a>
+													</div> -->
+													<div class="n-img3">
+														<a href="#"><img src="img/friends/n-img3.jpg"></a>
+													</div>
+												</div>
+											</li>
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/mostafa.jpg"></a></div>
+													<div class="n-user-info">
+														<span class="n-bold">Mostafa Mohammed AbuAyash</span>
+														<span>mentioned you in a comment in</span>
+														<span class="n-bold">Phone For You Community </span>
+													</div>
+												</div>
+												<div class="n-status-group">
+													<i class="fas fa-users"></i>
+													<span>59m</span>
+												</div>
+												<div class="notifications-right">
+													<!-- <div class="n-icons">
+														<a href="#"><i class="fas fa-ellipsis-h"></i></a>
+														<a href="#"><i class="fas fa-circle"></i></a>
+													</div> -->
+													<div class="n-img3">
+														<a href="#"><img src="img/friends/n-img3.jpg"></a>
+													</div>
+												</div>
+											</li>
+											<li class="notifications">
+												<div class="n-user">
+													<div class="n-user-img"><a href="#"><img src="img/friends/mostafa.jpg"></a></div>
+													<div class="n-user-info">
+														<span class="n-bold">Mostafa Mohammed AbuAyash</span>
+														<span>mentioned you in a comment in</span>
+														<span class="n-bold">Phone For You Community </span>
+													</div>
+												</div>
+												<div class="n-status-group">
+													<i class="fas fa-users"></i>
+													<span>59m</span>
+												</div>
+												<div class="notifications-right">
+													<!-- <div class="n-icons">
+														<a href="#"><i class="fas fa-ellipsis-h"></i></a>
+														<a href="#"><i class="fas fa-circle"></i></a>
+													</div> -->
+													<div class="n-img3">
+														<a href="#"><img src="img/friends/n-img3.jpg"></a>
+													</div>
+												</div>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</li>
@@ -795,6 +890,7 @@
 								<a href="#" class="account">
 									<i class="fas fa-user-circle"></i>
 								</a>
+								<div class="dropdown-arrow"></div>
 								<div class="dropdown-content-account">
 									<div class="account-dropdown">
 										<div class="a-left">
@@ -807,7 +903,8 @@
 									</div>
 
 									<div class="a-down">
-										<span>You'll be logged out first. Then someone else can log in or add their account.</span>
+										<span class="a-text">You'll be logged out first. Then someone else can log in or add their</span>
+										<span class="a-account">account.</span>
 									</div>
 									<ul class="accounts">
 										<li class="account1">
@@ -833,8 +930,9 @@
 								<a href="#" class="help">
 									<i class="fas fa-question-circle"></i>
 								</a>
+								<div class="dropdown-arrow"></div>
 								<div class="dropdown-content-help">
-									<div class="dropdown-help">
+									<div class="help-dropdown">
 										<div class="h-left">
 											<a href="#">Quick help</a>
 										</div>
@@ -844,7 +942,7 @@
 										</div>
 									</div>
 									<div class="h-search">
-										<input type="search" name="search" placeholder="How we can help?">
+										<input type="search" name="search" placeholder="How can we help?">
 										<i class="fas fa-search search-icon"></i>
 									</div>
 
@@ -879,6 +977,7 @@
 								<a href="#" class="down">
 									<i class="fas fa-sort-down"></i>
 								</a>
+								<div class="dropdown-arrow"></div>
 								<div class="dropdown-content-down">
 									<ul>
 										<li class="d-link1"><a href="#">Your Groups</a></li>
@@ -908,20 +1007,563 @@
 						<span>Samira Elgazar</span>
 					</div>
 					<span class="online"><i class="fas fa-circle"></i></span>
-					<div class="dropdown-content-people">
-						<div class="p-left">
-							<img src="img/friends/samira.jpg">
-						</div>
-						<div class="p-right">
-							<div class="p-status1">
-								
-							</div>
-							<div class="p-status2">
-								
-							</div>
-						</div>
-					</div>
 				</div>
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/myfather.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elmokadim</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother1.jpg" class="person-img">
+					<div class="person-name">
+						<span>Omar Samy Elgazzar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother3.jpg" class="person-img">
+					<div class="person-name">
+						<span>Mohmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother2.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedsami.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed sami</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/bestfriend.jpg" class="person-img">
+					<div class="person-name">
+						<span>محمد شريف الشرقاوي</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khalood.jpg" class="person-img">
+					<div class="person-name">
+						<span>Khaled ElMalah</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khaledgamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>خالد جمال</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedkamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Kamal</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/hussientabl.jpg" class="person-img">
+					<div class="person-name">
+						<span>Hussien Tabl</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+		</ul>
+		<div class="people-group">
+			<div>GROUP CONVERSATIONS</div>
+		</div>
+		<div class="create-group">
+			<div class="group-create">
+				<i class="fas fa-user-plus"></i>
+				<span>Create new group</span>
+			</div>
+		</div>
+		<div class="people-group">
+			<div>MORE CONTACTS (44)</div>
+		</div>
+		<ul class="people-online">
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/samira.jpg" class="person-img">
+					<div class="person-name">
+						<span>Samira Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/myfather.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elmokadim</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother1.jpg" class="person-img">
+					<div class="person-name">
+						<span>Omar Samy Elgazzar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother3.jpg" class="person-img">
+					<div class="person-name">
+						<span>Mohmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother2.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedsami.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed sami</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/bestfriend.jpg" class="person-img">
+					<div class="person-name">
+						<span>محمد شريف الشرقاوي</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khalood.jpg" class="person-img">
+					<div class="person-name">
+						<span>Khaled ElMalah</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khaledgamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>خالد جمال</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedkamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Kamal</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/hussientabl.jpg" class="person-img">
+					<div class="person-name">
+						<span>Hussien Tabl</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+		</ul>
+		<ul class="people-online">
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/samira.jpg" class="person-img">
+					<div class="person-name">
+						<span>Samira Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/myfather.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elmokadim</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother1.jpg" class="person-img">
+					<div class="person-name">
+						<span>Omar Samy Elgazzar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother3.jpg" class="person-img">
+					<div class="person-name">
+						<span>Mohmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother2.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedsami.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed sami</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/bestfriend.jpg" class="person-img">
+					<div class="person-name">
+						<span>محمد شريف الشرقاوي</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khalood.jpg" class="person-img">
+					<div class="person-name">
+						<span>Khaled ElMalah</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khaledgamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>خالد جمال</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedkamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Kamal</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/hussientabl.jpg" class="person-img">
+					<div class="person-name">
+						<span>Hussien Tabl</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+		</ul>
+		<ul class="people-online">
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/samira.jpg" class="person-img">
+					<div class="person-name">
+						<span>Samira Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/myfather.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elmokadim</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother1.jpg" class="person-img">
+					<div class="person-name">
+						<span>Omar Samy Elgazzar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother3.jpg" class="person-img">
+					<div class="person-name">
+						<span>Mohmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother2.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedsami.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed sami</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/bestfriend.jpg" class="person-img">
+					<div class="person-name">
+						<span>محمد شريف الشرقاوي</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khalood.jpg" class="person-img">
+					<div class="person-name">
+						<span>Khaled ElMalah</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khaledgamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>خالد جمال</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedkamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Kamal</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/hussientabl.jpg" class="person-img">
+					<div class="person-name">
+						<span>Hussien Tabl</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+		</ul>
+		<ul class="people-online">
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/samira.jpg" class="person-img">
+					<div class="person-name">
+						<span>Samira Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/myfather.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elmokadim</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother1.jpg" class="person-img">
+					<div class="person-name">
+						<span>Omar Samy Elgazzar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother3.jpg" class="person-img">
+					<div class="person-name">
+						<span>Mohmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/mybrother2.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Elgazar</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedsami.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed sami</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/bestfriend.jpg" class="person-img">
+					<div class="person-name">
+						<span>محمد شريف الشرقاوي</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khalood.jpg" class="person-img">
+					<div class="person-name">
+						<span>Khaled ElMalah</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/khaledgamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>خالد جمال</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/ahmedkamal.jpg" class="person-img">
+					<div class="person-name">
+						<span>Ahmed Kamal</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
+			</li>
+			
+			<li class="person">
+				<div class="someone">
+					<img src="img/friends/hussientabl.jpg" class="person-img">
+					<div class="person-name">
+						<span>Hussien Tabl</span>
+					</div>
+					<span class="online"><i class="fas fa-circle"></i></span>
+				</div>	
 			</li>
 		</ul>
 	</div>   <!-- END People !!! -->  
